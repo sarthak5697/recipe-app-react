@@ -70,7 +70,7 @@ margin: 6rem 0rem ;
 
 const Card = styled.div`
 min-height:18rem;
-min-width: 22rem;
+min-width: 20rem;
 border-radius:2rem;
 overflow:hidden;
 position:relative;
