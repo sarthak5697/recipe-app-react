@@ -20,26 +20,39 @@ function Cuisine() {
   
 
   return (
-    <div>Cuisine</div>
+    <Grid>
+      {cuisine.map((item)=>{
+        return(
+          <Card key={item.id}>
+            <img src={item.image} alt="image"/>
+            <h4>{item.title}</h4>
+          </Card>
+        )
+      })}
+    </Grid>
   )
 }
 
 const Grid = styled.div`
 display: grid;
 grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
-grid-row-gap: 3rem;
+grid-gap: 3rem;
 `;
 
 const Card = styled.div`
  
  img{
-  border-radius:2rem;
-  position : absolute;
-  left:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
+  width: 100%;
+  border-radius: 2rem;
  }
+ a{
+   text-decoration:none;
+ }
+ h4{
+   text-align: center;
+   padding: 1rem;
+ }
+
 `;
 
 
