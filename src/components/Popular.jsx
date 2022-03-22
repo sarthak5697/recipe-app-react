@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {Splide,SplideSlide} from '@splidejs/react-splide';
 // USed for React Carousel  
 import "@splidejs/splide/dist/css/splide.min.css";
+import { Link } from "react-router-dom";
 
 function Popular() {
   
@@ -50,11 +51,13 @@ function Popular() {
             {popular.map((recipe)=>{
               return(
                 <SplideSlide key={recipe.id}>
+                <Link to={"/recipe/" + recipe.id}>
                 <Card>
                   <p>{recipe.title}</p>
                   <img src={recipe.image} alt={recipe.titile} />
                   <Gradient/>
                 </Card>
+                </Link>
                 </SplideSlide>
                 );
               })}
