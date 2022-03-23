@@ -9,7 +9,7 @@ import { GiKnifeFork} from "react-icons/gi";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/recipe-app-react">
       <Nav>
         <GiKnifeFork /><Logo to={"/"}>Deliciousss</Logo>
       </Nav>
