@@ -38,8 +38,7 @@ const Veggie = () => {
   return (
     <div>
      <Wrapper>
-       <h3>Our Vegetarian Picks</h3>
-
+      
         <Splide 
         options={{
           perPage: 3,
